@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/329b1b26dd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/prasad-hg.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Ai Engineer</p>
+            <h1>Hi, I'm <span>Prasad</span><br>hg From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I’m Prasad hg, an AI Engineer passionate about solving complex problems with innovative technology. With expertise in <b><span style="color: #d04772;">Full-Stack Web Development</span></b>, <b><span style="color: #d04772;">Machine Learning</span></b>  and <b><span style="color: #d04772;">Deep Learning</span></b>, I enjoy creating intelligent solutions and seamless user experiences.<br>
+
+                   <br>
+                   <hr>
+                   <br>
+                    I have hands-on experience in,<br>
+                   
+                    <b>AI & Machine Learning:</b> Building predictive models, implementing advanced algorithms, and developing AI-driven solutions.
+                    <br>
+                    <b>Full-Stack Development:</b> Crafting dynamic web applications using modern frameworks and technologies.<br>
+                    <br>
+                    <hr><br>
+                    In addition to my technical skills, I actively participate in hackathons, love tackling DSA challenges, and stay committed to continuous learning in cutting-edge technologies.
+                    <br>
+                    
+                    Feel free to explore my portfolio to learn more about my projects, skills, and achievements. Let’s connect and innovate together!
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML, CSS, React.js, Node.js, Express.js, MERN Stack.</li>
+                        <li><span>Machine Learning & AI</span><br>Scikit-learn, TensorFlow, PyTorch, Keras, Reinforcement Learning, Time Series Analysis.</li>
+                        <li><span>Data Science Tools</span><br>Pandas, NumPy, Matplotlib, Seaborn, Streamlit, Twinkter, Folium Maps, Jupyter Notebook.</li>
+                        <li><span>Databases</span><br>MySQL, PostgreSQL, MongoDB, Firebase.</li>
+                        <li><span>Version Control</span><br>Git, GitHub.</li>
+                        <li><span>Cloud Platforms</span><br>Google Cloud Platform.</li>
+                        <li><span>Programming Languages</span><br>Python, JavaScript, Java, C, C#.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span class="experience-tab" data-target="x-ciencia">2024 - Current</span><br>
+                            <b class="experience-tab" data-target="x-ciencia">Intern Associate Software Engineer at X-CIENCIA Technologies</b>
+                        </li>
+                        <li>
+                            <span class="experience-tab" data-target="apna-college">2023</span><br>
+                            <b class="experience-tab" data-target="apna-college">Internship at Apna College</b>
+                        </li>
+                        <li>
+                            <span class="experience-tab" data-target="nicc">2023</span><br>
+                            <b class="experience-tab" data-target="nicc">Cybersecurity Analyst Intern at National Information and Cybersecurity Council (NICC)</b>
+                        </li>
+                        <li>
+                            <span class="experience-tab" data-target="ten-seconds">2022</span><br>
+                            <b class="experience-tab" data-target="ten-seconds">Summer Internship at 10 Seconds</b>
+                        </li>
+                    </ul>
+                
+                    <div id="x-ciencia" class="experience-details hidden">
+                        <ul>
+                            
+                            <li>Worked extensively on machine learning, AI, and deep learning projects.</li>
+                            <li>Developed and optimized web applications using modern frontend and backend technologies.</li>
+                            <li>Designed and integrated RESTful APIs, ensuring seamless client-server communication.</li>
+                            <li>Conducted API testing and debugging to maintain high performance and reliability.</li>
+                        
+                        </ul>
+                    </div>
+                
+                    <div id="apna-college" class="experience-details hidden">
+                        <ul>
+                            <li>Built dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+                            <li>Developed and deployed responsive, user-friendly interfaces with React.js.</li>
+                            <li>Created RESTful APIs with Express.js for efficient server-side communication.</li>
+                            <li>Worked with MongoDB for database design, management, and data retrieval.</li>
+                            <li>Gained hands-on experience in deploying applications and resolving cross-platform issues.</li>
+                        </ul>
+                    </div>
+                
+                    <div id="nicc" class="experience-details hidden">
+                        <ul>
+                            <li>Conducted vulnerability assessments and penetration testing (VAPT) of web applications.</li>
+                            <li>Gained expertise in web application scanning, networking protocols, and threat analysis.</li>
+                            <li>Collaborated with a team to identify and resolve security vulnerabilities effectively.</li>
+                        </ul>
+                    </div>
+                
+                    <div id="ten-seconds" class="experience-details hidden">
+                        <ul>
+                            <li>Enhanced soft skills including communication, teamwork, and time management.</li>
+                            <li>Gained proficiency in Microsoft Office tools such as Word, Excel, and PowerPoint.</li>
+                            <li>Completed hands-on projects demonstrating the application of office productivity tools.</li>
+                            <li>Developed organizational and presentation skills to improve workplace efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br><b>B.Tech in Artificial Intelligence and Data Science</b><br>Navkis College of Engineering, Hassan</li>
+                        <li><span>2019 - 2021</span><br><b>Pre-University (PU)</b><br>Masters PU College</li>
+                        <li><span>2018</span><br><b>SSLC</b><br>Bethesda Model School</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <!-- Frontend Service -->
+            <div class="service-item">
+                <i class="fas fa-laptop-code"></i>
+                <h2>Frontend Development</h2>
+                <p>I specialize in creating responsive, user-friendly web applications.</p>
+                <a href="javascript:void(0);" onclick="toggleDetails(this, 'frontendDetails')">Learn more</a>
+            </div>
+
+            <!-- Backend Service -->
+            <div class="service-item">
+                <i class="fas fa-server"></i>
+                <h2>Backend Development</h2>
+                <p>I build scalable and secure server-side applications.</p>
+                <a href="javascript:void(0);" onclick="toggleDetails(this, 'backendDetails')">Learn more</a>
+            </div>
+
+            <!-- Machine Learning Service -->
+            <div class="service-item">
+                <i class="fas fa-brain"></i>
+                <h2>Machine Learning & Deep Learning</h2>
+                <p>Design and deploy ML models for predictive analytics and forecasting.</p>
+                <a href="javascript:void(0);" onclick="toggleDetails(this, 'mlDlDetails')">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Frontend Development Details (Hidden Initially) -->
+<div id="frontendDetails" class="service-details" style="display:none;">
+    <h3>What I do in Frontend Development:</h3>
+    <ul>
+        <li>Building responsive, user-friendly websites with HTML5, CSS3, and JavaScript.</li>
+        <li>Creating interactive user interfaces using React.js, Vue.js, and other frontend libraries.</li>
+        <li>Optimizing web pages for mobile and desktop using responsive design principles.</li>
+        <li>Integrating third-party APIs and ensuring cross-browser compatibility.</li>
+    </ul>
+</div>
+
+<!-- Backend Development Details (Hidden Initially) -->
+<div id="backendDetails" class="service-details" style="display:none;">
+    <h3>What I do in Backend Development:</h3>
+    <ul>
+        <li>Developing RESTful APIs with Node.js and Express.js.</li>
+        <li>Working with databases like MongoDB, MySQL, and PostgreSQL.</li>
+        <li>Implementing authentication systems using JWT, OAuth, etc.</li>
+        <li>Optimizing server-side performance and scaling solutions.</li>
+    </ul>
+</div>
+
+<!-- Machine Learning & Deep Learning Details (Hidden Initially) -->
+<div id="mlDlDetails" class="service-details" style="display:none;">
+    <h3>What I do in Machine Learning & Deep Learning:</h3>
+    <ul>
+        <li>Building and training machine learning models for classification and regression.</li>
+        <li>Deploying models with frameworks like TensorFlow, Keras, and PyTorch.</li>
+        <li>Using time-series forecasting, NLP, and computer vision techniques for real-world applications.</li>
+        <li>Optimizing models for real-time predictions and ensuring model accuracy.</li>
+    </ul>
+</div>
+
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kevin. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    document.querySelectorAll('.experience-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Hide all details
+        document.querySelectorAll('.experience-details').forEach(detail => {
+            detail.classList.remove('active');
+        });
+
+        // Show the selected detail
+        const targetId = tab.getAttribute('data-target');
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.classList.add('active');
+        }
+    });
+});
+
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ <script>
+    function toggleDetails(linkElement, detailsId) {
+        // Check if the details already exist below this service item
+        let detailsContent = document.getElementById(detailsId);
+        
+        // If the details content is already inserted, just toggle its visibility
+        if (detailsContent.style.display === "none" || detailsContent.style.display === "") {
+            detailsContent.style.display = "block"; // Show the details content
+        } else {
+            detailsContent.style.display = "none"; // Hide the details content
+        }
+        
+        // If the details are not already inserted, insert them below the clicked service item
+        if (!linkElement.nextElementSibling || linkElement.nextElementSibling !== detailsContent) {
+            let parent = linkElement.closest('.service-item');
+            parent.appendChild(detailsContent);  // Insert the details below the service item
+        }
+    }
+</script>
+
+</body>
+</html>
